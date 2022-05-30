@@ -1,0 +1,126 @@
+/* PALETA
+#75F4F4
+#F3E8EE
+#475B63
+#2E2C2F
+#DBFE87
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap');
+
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2E2C2F;
+}
+
+main{
+    height: 90vh;
+    margin-top: 5vh;
+}
+
+header{
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-bottom: 3vh;
+    color: #F3E8EE;
+}
+
+#image{
+    height: 25vw;
+    border-radius: 50%;
+    box-shadow: 0.1vh 0.1vh 3vh 0.0005vh #DBFE87;
+}
+
+#name{
+    margin-bottom: 0;
+    font-size: 8vw;
+    margin-bottom: 1vw;
+    color: #DBFE87;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#email{
+    margin-top:0;
+    font-size: 5vw;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+.buttons{
+    display:grid;
+    width: 60vw;
+    margin: auto;
+}
+
+.button{
+    background-color: #75F4F4;
+    margin-top: 2vh;
+    height: 10vh;
+    font-size: 4vh;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+
+    color: #2E2C2F;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.15s ease-in;
+}
+
+.button:visited{
+    color: #2E2C2F
+}
+
+.button:hover{
+    box-shadow: 0.01vh 0.01vh 1.5vh 0.05vh #2E2C2F inset;
+}
+
+
+
+
+
+/* computador */
+@media(min-width: 650px){
+
+    header{
+        margin-bottom: 5vh;
+    }
+    #image{
+        height: 200px;
+    }
+    #name{
+        font-size: 6vh;
+        margin-bottom: 0;
+    }
+    #email{
+        font-size: 4vh;
+        margin-top:0;
+    }
+
+    article{
+    }
+    .buttons{
+        display:flex;
+        width: 60vw;
+        min-width: 600px;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .button{
+        width: 25vw;
+        height: 15vh;
+
+        min-width: 250px;;
+    }
+
+}
